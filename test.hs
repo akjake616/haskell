@@ -31,7 +31,9 @@ specialAge age = "not so special... you are jsut " ++ show age ++ " years old."
 applyTwice :: (a -> a) -> a -> a
 applyTwice f x = f (f x)
 --
-square :: Int -> Int 
+square :: Double -> Double 
 square x = x*x
 --
-
+sumList :: [Double] -> Double
+sumList [] = 0
+sumList (x:xs) = x + sumList xs
